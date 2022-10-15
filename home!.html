@@ -1,0 +1,128 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="logo.jpg" type="jpg">
+</head>
+<style>
+body{
+margin:0px;
+background-color: rgb(119,119,250);
+}
+h1{
+color: rgb(237,237,237);
+font-family:system-ui, -apple-system,BlinkMacSystemFont, 'segoe
+UI',Roboto,Oxygen,Ubuntu, Canterall,'Open Sans','Helvetica Neue',sans-serif
+}
+h2{
+color: rgb(237,237,237);
+font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial, sansserif;
+}
+ul{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+background-color: darkblue;
+}
+li{
+float:left;
+border-right: 1px solid rgba(225,225,225,0.269);
+}
+li a{
+display: block;
+padding: 20px;
+text-decoration: none;
+background-color: darkblue;
+color: white;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+.home{
+background-color: rgb(115,204,210);
+margin: 5px;
+}
+li a, .dropbtn{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 15px 15px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+background-color: rgb(47,47,241);
+}
+.dropdown{
+float: right;
+border-right: none;
+border-left: 1px solid rgba(255,255,255,0.269)
+}
+.dropdown-content{
+display: none;
+position: absolute;
+min-width: 126px;
+}
+.dropdown-conten a{
+color: rgb(255,255,255);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: right;
+}
+.dropdown-conten a:hover{
+background-color: rgb(47,47,241);
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+.grid-container{
+display: grid;
+grid-template-columns: auto;
+gap:1px;
+padding: 1px;
+margin-left: 300px;
+margin-right: 300px;
+}
+.grid-container > div{
+background-color: rgb(119,119,250);
+padding: 20px 0;
+font-size: 20px;
+gap:20px;
+}
+.item1 {
+grid-column-start: 1;grid-column-end: 3;
+}
+.item2 {
+align-content: flex-start;
+}
+.button{
+background-color: blue;
+color: white;
+border-radius: 15px;
+padding: 15px;
+font-size: 25px;
+border: none;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="home!.html">Beranda</a></li>
+<li><a href="produk.html">Pesan Produk</a></li>
+<li><a href="kategori.html">Kategori Produk</a></li>
+<li><a href="pesan.html">Pesanan Saya</a></li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Profil Saya</a>
+<div class="dropdown-content">
+<a href="profil.html">Profil</a>
+<a href="in.html">Keluar</a>
+</div>
+</li>
+</ul>
+<div class="grid-container" align="center">
+<div class="item1"><h1>Welcome To DICKSTREET FASHION </h1></div>
+<div class="item2"><h2>Your Site, Your Shop, OUR CHOICES</h2><br>
+<a class="button" href="produk.html">Order</a></div>
+<div class="item3"><img src="manuk.png" width="80% height="auto"></div>
+</body>
+</html>

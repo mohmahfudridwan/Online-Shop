@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="logo.jpg" type="jpg">
+<title>Pesanan</title>
+<style type="text/css">
+body{
+margin:0px;
+background-color: rgb (119,119,250);
+}
+h1{
+color: rgb(237,237,237);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+h2{
+color: rgb(237,237,237);
+font-family:'trebuchet MS', 'lucida sans unicode','lucida sans',arial,sans-serif;
+}
+ul{
+list-style-type:none;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+background-color: darkblue;
+}
+li{
+float: left;
+border-right: 1px solid rgba(255, 255, 255, 0.269);
+}li a{
+display: block;
+padding: 20px;
+text-decoration: none;
+background-color: darkblue;
+color: white;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+.home{
+background-color: rgb(115,204,210);
+margin: 5px;
+}
+li a, .dropbtn{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover .dropdown:hover .dropbtn {
+background-color: rgb(47, 47, 241);
+}
+.dropdown {
+float: right;
+border-right: none;
+border-left: 1px solid rgba(255, 255, 255, 0.269);
+}
+.dropdown-content {
+display: none;
+position: absolute;
+min-width: 160px;
+z-index: 1;
+}
+.dropdown-content a{
+color: rgb(255, 255, 255);
+padding: 12px, 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover{
+background-color: rgb(47, 47, 241);
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+#customers{
+font-family: arial, helvetica,sans-serif;border-collapse: collapse;
+width: 80%;
+}
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:hover {background-color: #ddd;}
+#customers th{
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: darkblue;
+color: white;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="home!.html">Beranda</a></li>
+<li><a href="produk.html">Pesan Produk</a></li>
+<li><a href="kategori.html">Kategori Produk</a></li>
+<li><a href="pesan.html">Pesanan Saya</a></li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Profil Saya</a>
+<div class="dropdown-content">
+<a href="propil.html">Profil</a>
+<a href="in.html">Keluar</a>
+</div>
+</li>
+</ul>
+<div align="center">
+<h1>Daftar Pesanan</h1>
+<table id="customers">
+<tr>
+<th>Nama Barang</th>
+<th>Harga</th>
+<th>Jumlah</th>
+<th>Total</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>Sepatu Sneakers Pria Terbaru 2022</td>
+<td>250.000</td>
+<td>2</td>
+<td>500.000</td>
+<td>Sedang Diproses</td>
+</tr>
+<tr>
+<td>Converse 70s Hi Black Egret Bnib Original</td>
+<td>900.000</td>
+<td>3</td>
+<td>2.700.000</td>
+<td>Sedang Dikirim</th>
+</tr>
+<tr>
+<td>Sepatu Compass X Tame Impala “Artificial Vibration” </td>
+<td>1.250.000</td>
+<td>2</td>
+<td>2.500.000</td>
+<td>Sedang Dikirim</th>
+</tr>
+<tr>
+<td>Sepatu Ventela x Never Too Lavish Low</td>
+<td>400.000</td>
+<td>2</td>
+<td>900.000</td>
+<td>Selesai</th>
+</tr>
+</table>
+</div>
+</body>
+</html>
